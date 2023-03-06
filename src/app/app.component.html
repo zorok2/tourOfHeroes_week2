@@ -10,5 +10,6 @@
 <Button class="btn" type="button" (click) = "onClickDashboard()">Dashboard</Button>
 <Button class="btn" type="button" (click) = "onClickHeroes()">Heroes</Button>
 <!-- Pass data vào child  -->
-<app-heroes-dashboard [isclicked] = "isclicked" [isclickedHeroes] = "isclickedHeroes"></app-heroes-dashboard>
+<app-heroes-dashboard [isclicked] = "isclicked" ></app-heroes-dashboard>
+<app-heroes-heroes-list [isclickedHeroes] = "isclickedHeroes"></app-heroes-heroes-list>
 <router-outlet></router-outlet>
