@@ -12,23 +12,3 @@
     align-items: center;
     justify-content: space-around;
 }
-.row-info{
-    min-width: 400px;
-    /* margin: auto; */
-    margin-bottom: 10px;
-}
-.info-id{
-    height: 50px;
-    display: inline-block;
-    background-color: darkslateblue;
-    color: white;
-    padding: 0px 10px;
-    /* padding: 0px 10px; */
-    
-}
-.info-name{
-    padding: 15px 20px;
-    width: 400px;
-    background-color: beige;
-    display: inline-block;
-}

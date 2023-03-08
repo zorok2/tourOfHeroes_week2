@@ -1,0 +1,13 @@
+<div *ngIf ="isClickDetail">
+    <h3>MAGNETA Details</h3>
+<div class="detail-hero">
+    <p class="hero-id">ID: {{hero.id}}</p>
+<div>
+    <span style="color: darkslateblue; font-weight: bold;">Hero name: </span>
+    <input style="display: inline-block;" type="text" [(ngModel)]="hero.name" placeholder="name">
+</div>
+    <button (click)="back()" class="btn-back" type="button">Back</button>
+</div>
+</div>
+<app-heroes-dashboard *ngIf="isClickDetail==false && isBackDashBoard == true" [isclicked] = "true" ></app-heroes-dashboard>
+<app-heroes-heroes-list *ngIf="isClickDetail==false && isBackHeroesList== true" [isclickedHeroes]="true"></app-heroes-heroes-list>

@@ -1,7 +1,12 @@
 .row-info{
-    min-width: 400px;
     /* margin: auto; */
     margin-bottom: 10px;
+    
+   
+}
+.row-info:hover{
+    opacity: 0.9;
+
 }
 .info-id{
     height: 50px;

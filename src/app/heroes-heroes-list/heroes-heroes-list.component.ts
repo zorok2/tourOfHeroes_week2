@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { heroes } from '../heroesList';
+import { Hero, heroes } from '../heroesList';
 
 @Component({
   selector: 'app-heroes-heroes-list',
@@ -9,5 +9,12 @@ import { heroes } from '../heroesList';
 export class HeroesHeroesListComponent {
   @Input() isclickedHeroes!: Boolean;
   heroes = heroes;
+  hItem!: Hero;
+  isbackHL = false;
+  onClickRow(item: Hero){
+    this.isclickedHeroes = false;;
+    this.hItem = item;
+    this.isbackHL = true;
+  }
 
 }

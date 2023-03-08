@@ -1,5 +1,13 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
 .btn{
+    margin-top: 20px;
     margin-right: 20px;
+    margin-bottom: 30px;
     padding: 10px;
 
 }

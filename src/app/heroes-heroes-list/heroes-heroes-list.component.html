@@ -1,12 +1,12 @@
-<div *ngIf ="isclickedHeroes == true">
+<div *ngIf ="isclickedHeroes == true" >
     <p style="font-size: 28px;font-weight: bold;">My Heroes</p>
     <div class="col-8" *ngFor="let hero of heroes">
-        <div class="row-info">
+        <div class="row-info" (click)="onClickRow(hero)">
             <div class="info-id">
                 <p>{{hero.id}}</p>
             </div>
             <div class="info-name">{{hero.name}}</div>
         </div>
     </div>
-
 </div>
+<app-heroes-detail [hero]="hItem"*ngIf ="isclickedHeroes == false&& isbackHL" [isClickDetail]="true" [isBackHeroesList]="isbackHL"></app-heroes-detail>

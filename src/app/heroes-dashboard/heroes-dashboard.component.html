@@ -1,11 +1,11 @@
 <div>
-    <div *ngIf = "isclicked == true">
+    <div *ngIf = "isclicked == true ">
       <p style="font-size: 18px;">TOP HEROES</p>
      <div class="row-4">
         <div *ngFor="let hero of heroes" >
-            <Button class="btn-heroes" type="button" >{{hero.name}}</Button>
+            <Button (click)="onClickHeroDetail(hero)" class="btn-heroes" type="button">{{hero.name}}</Button>
         </div>
      </div>
     </div>
-  
+    <app-heroes-detail *ngIf = "isclicked == false && isClickDetail" [hero]="hero1" [isClickDetail]="isClickDetail" [isBackDashBoard]="isbackDB"></app-heroes-detail>
   </div>
